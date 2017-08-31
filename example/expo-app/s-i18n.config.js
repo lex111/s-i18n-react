@@ -10,7 +10,7 @@ module.exports = {
     /**
      * The path where language files will be generated
      */
-    messagePath: __dirname + '/languages/',
+    messagePath: 'languages/',
     /**
      * The function you are using in your source code for translations
      */

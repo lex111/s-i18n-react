@@ -73,7 +73,7 @@ export default class BetterTranslator extends Component {
              n: 42
            })}
 
-           <Greeting name="Mehdi" />
+           <Greeting name="s-i18n" />
         </View>
       </View>
     );

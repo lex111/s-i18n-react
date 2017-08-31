@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
-import { Text, Picker } from 'react-native';
+import { Component } from 'react';
 
-//const t = require('./locale.js');
-//{ t.t("Hello {name}. This is a component using t()", {name: this.props.name }) }
+const t = require('./locale.js');
 
 export default class Greeting extends Component {
   render() {
     return (
-      <Text>
-      </Text>
-    );
+      t.t("Hello {name}. This is a component using t()", {
+        name: this.props.name
+      })
+    )
   }
 }
