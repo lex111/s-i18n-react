@@ -10,6 +10,7 @@ React application.
 [![Quality][quality-badge] ][quality-url]
 [![dependencies][dependencies-image] ][dependencies-url]
 [![devdependencies][devdependencies-image] ][devdependencies-url]
+[![Gitter chat](https://img.shields.io/badge/chat-on_gitter-008080.svg?style=flat-square)](https://gitter.im/s-i18n)
 
 [npm-icon]: https://nodei.co/npm/s-i18n-react.png?downloads=true
 [npm-url]: https://npmjs.org/package/s-i18n-react
