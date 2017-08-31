@@ -13,7 +13,8 @@
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
-    "test": "node node_modules/jest/bin/jest.js --watch"
+    "test": "node node_modules/jest/bin/jest.js --watch",
+    "extract-i18n": "node node_modules/s-i18n-react/bin/extract --config=../../s-i18n.config.js"
   },
   "jest": {
     "preset": "jest-expo"

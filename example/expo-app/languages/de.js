@@ -18,7 +18,7 @@
 * NOTE: this file must be saved in UTF-8 encoding.
 */
 module.exports = {
-  "I think that {user} made {repository} public": "Creo que {user} hizo {repository} público",
+  "I think that {user} made {repository} public": "",
   "This string is not translated and will automatically fallback to {language}": "",
   "This string should not trigger placeholders processing": "",
   "This string uses {nested}": "",
