@@ -1,0 +1,36 @@
+#!/usr/bin/env node
+
+const Extractor = require('./../src/Extractor');
+
+// Yaaaarrr !
+var argv = require('yargs')
+  .usage('Usage: $0 --config=/your/config/file.js')
+  .demandOption(['config']).argv;
+
+let config = {};
+
+// Get optional config file
+if (argv.config !== false) {
+  config = require(__dirname + '/../' + argv.config);
+}
+
+// Override parameters
+let params = ['languages', 'sourcePath', 'messagePath', 'translator'];
+for (var i = 0; i < params.length; i++) {
+  if (typeof argv[params[i]] !== 'undefined') {
+    config[params[i]] = argv[params[i]];
+  }
+}
+
+// Arrayify `languages` parameter
+if (typeof config.languages === 'string') {
+  config.languages = config.languages.split(',');
+}
+
+config['verbose'] = true;
+
+// TODO: test all required parameters before running the extraction
+// this.fatal(`You must define languages using ${chalk.bold("--languages")} (i.e: --languages=fr,es)`);
+
+let ex = new Extractor(config);
+ex.extractMessages();
